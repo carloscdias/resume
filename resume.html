@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+      @media print {
+        @page {
+          size: auto;
+          margin: 0;
+        }
+      }
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+      }
+      h1, h2, p {
+        margin: 0;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+      }
+      .grid-content {
+        grid-column-start: 2;
+        margin-bottom: 1em;
+      }
+      .grid-header {
+        grid-column-start: 1;
+        text-align: center;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 0 .5em;
+        margin-bottom: 1em;
+      }
+      .grid-header::first-letter {
+        font-size: 18px;
+      }
+      .inner-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .featured {
+        font-weight: bold;
+      }
+      .time {
+        font-style: italic;
+      }
+      .brief-description {
+        font-style: italic;
+      }
+      .topic {
+        font-size: 12px;
+      }
+      .topic::before {
+        content: "\2713";
+      }
+      .header {
+        padding: 2em 0;
+      }
+      body {
+        padding: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-content header">
+        <h1>Carlos Cardoso Dias</h1>
+        <p>carlosdias.dev@gmail.com</p>
+        <p>55 (22) 99209-9475</p>
+        <p>github.com/carloscdias</p>
+      </div>
+
+      <h2 class="grid-header">Experience</h2>
+
+      <div class="grid-content">
+        <p><span class="featured">Software Engineering Intern at UNICEF Office of Innovation</span>, <span class="time">Jan 2018 - Present</span></p>
+        <p>
+          Worked with Node.js in MagicBox (https://github.com/unicef/magicbox/wiki), a platform to use real-time information to inform life-saving
+          humanitarian responses to emergency situations. Ingesting, aggregating and serving.
+        </p>
+      </div>
+      <div class="grid-content">
+        <p><span class="featured">Software Engineering Intern at Globo.com</span>, <span class="time">Jan - Oct 2017</span></p>
+        <p>
+          Worked with Ruby on Rails, React, Git and TDD, applying Design Pattern principles on the Globosat Play website
+          (https://globosatplay.globo.com/). In this project, I was in charge of the maintenance of the previous version and
+          the development of new React based components for the current version, along with my teammates.
+        </p>
+      </div>
+      <div class="grid-content">
+        <p><span class="featured">Lead Software Developer at Digital M3</span>, <span class="time">Dec 2014 - Dec 2016</span></p>
+        <p>
+          Worked with the conception, design and implementation of WordPress plugins for a starting company that grew
+          exponentially in a short time focusing on Ecommerce (https://profiles.wordpress.org/carlos-cardoso-dias#content-plugins).
+        </p>
+      </div>
+      <div class="grid-content">
+        <p><span class="featured">Software Developer at Scupen Interactive</span>, <span class="time">May - Oct 2014</span></p>
+        <p>
+          Worked with Android devices, implementing enterprise software to help the company get customer data on the streets.
+          Developed from the scratch the major version 1.5 of the INDEVA App, a software to obtain customer service data, used to
+          build statistics and help improve the measurement of store quality
+          (https://play.google.com/store/apps/details?id=br.com.indeva&hl=pt_BR).
+        </p>
+      </div>
+      <div class="grid-content">
+        <p><span class="featured">Software Developer Intern at Designtec</span>, <span class="time">Jun - Dec 2013</span></p>
+        <p>
+          Worked with PHP maintaining the company’s websites and developing facebook apps, also worked with Objective-C developing
+          the iPhone app for the Congressman Glauber Braga.
+        </p>
+      </div>
+
+      <h2 class="grid-header">Academic Experience</h2>
+
+      <div class="grid-content">
+        <p><span class="featured">Teaching Assistant at Universidade Federal do Rio de Janeiro, Brazil</span>, <span class="time">Jan - Dec 2012</span></p>
+        <p class="brief-description">Subject: Computation II (C programming language)</p>
+      </div>
+
+      <div class="grid-content">
+        <p><span class="featured">Undergraduate Researcher at Universidade Estadual do Rio de Janeiro, Brazil</span>, <span class="time">May 2017 - Present</span></p>
+        <p class="brief-description">Theme: Genetic Algorithms applied to game goals generation</p>
+      </div>
+
+      <h2 class="grid-header">Education</h2>
+
+      <div class="grid-content">
+        <p><span class="featured">Universidade Estadual do Rio de Janeiro, Brazil</span>, <span class="time">Jan 2015 - Expected Dec 2018</span></p>
+        <p class="brief-description">Major: Computer Engineering.</p>
+        <p><span class="featured">Current GPA: 9.13</span>/10</p>
+      </div>
+
+      <div class="grid-content">
+        <p><span class="featured">Centro Federal de Educação Tecnológica Celso Suckow da Fonseca, Brazil</span>, <span class="time">Jan 2009 - Dec 2013</span></p>
+        <p class="brief-description">Technical field: Industrial Computing.</p>
+      </div>
+
+      <div class="grid-content inner-grid">
+        <div class="topic">Object-Oriented Programming</div>
+        <div class="topic">Functional Programming</div>
+        <div class="topic">Algorithms</div>
+        <div class="topic">Operating Systems</div>
+        <div class="topic">Intro to Artificial Intelligence</div>
+        <div class="topic">Data Structures</div>
+        <div class="topic">Test Driven Development</div>
+        <div class="topic">Computer Networks</div>
+      </div>
+
+      <h2 class="grid-header">Technical Skills</h2>
+
+      <div class="grid-content">
+        <p>Most experienced with <span class="featured">C, Java, PHP, SQL</span> and <span class="featured">Git</span></p>
+        <p>Some knowledge of <span class="featured">C++, Python, Ruby, Objective-C, Javascript, Assembly, Shell Script</span></p>
+      </div>
+
+      <h2 class="grid-header">Language Skills</h2>
+
+      <div class="grid-content">
+        <p>Native <span class="featured">Portuguese</span>, fluent in <span class="featured">English</span></p>
+      </div>
+
+      <h2 class="grid-header">General</h2>
+
+      <div class="grid-content">
+        <p>Computational Consultant in Java for mobile and desktop applications</p>
+        <p>Guest Speaker at OpenDev, a small convention for developers in the mountain region of Rio de Janeiro</p>
+        <p>A pentester enthusiast, spending my free time pursuing exploitation techniques and learning about shellcode writing and operating system principles</p>
+      </div>
+
+    </div>
+  </body>
+</html>
