@@ -74,9 +74,15 @@
       .hide {
         display: none;
       }
+      .button-full-curriculum {
+        position: absolute;
+        right: 10vw;
+        top: 10vh;
+      }
     </style>
   </head>
   <body>
+    <a id="button_full_curriculum" href="#" class="button-full-curriculum">Main info</a>
     <div class="grid-container">
       <div class="grid-content">
         <h1>Carlos Cardoso Dias</h1>
@@ -241,4 +247,21 @@
 
     </div>
   </body>
+  <script type="text/javascript">
+    var button = document.getElementById('button_full_curriculum');
+    var hidden_elements = document.querySelectorAll('.hide');
+    var hidden = true;
+
+    button.addEventListener('click', function(e) {
+      if (hidden) {
+        hidden_elements.forEach(a => a.classList.remove('hide'))
+        button.text = 'All info';
+      } else {
+        hidden_elements.forEach(a => a.classList.add('hide'))
+        button.text = 'Main info';
+      }
+      hidden = !hidden;
+      return false;
+    });
+  </script>
 </html>
