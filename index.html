@@ -8,7 +8,13 @@
       @media print {
         @page {
           size: auto;
+          margin: 2em 0;
+        }
+        @page:first {
           margin: 0;
+        }
+        .no-print {
+          display: none;
         }
       }
       body {
@@ -82,7 +88,7 @@
     </style>
   </head>
   <body>
-    <a id="button_full_curriculum" href="#" class="button-full-curriculum">Main info</a>
+    <a id="button_full_curriculum" href="#" class="button-full-curriculum no-print">Main info</a>
     <div class="grid-container">
       <div class="grid-content">
         <h1>Carlos Cardoso Dias</h1>
